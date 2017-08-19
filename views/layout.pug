@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title=title
+    meta(name='description', content='A simple template')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    link#favicon(rel='icon', href='https://glitch.com/edit/favicon-app.ico', type='image/x-icon')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css')
+    link(rel='stylesheet', href='/style.css')
+    block head
+  body
+    header
+      block header
+    main
+      div.container
+        block main
+    footer  
+      block footer
+  script(type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')
+  
+  block script
+
